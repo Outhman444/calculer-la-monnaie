@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de la monnaie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- رسالة ترحيبية -->
+        <div class="welcome-section">
+            <h2>Bienvenue sur le site de calcul de monnaie !</h2>
+            <p>Bonjour, je m'appelle Otman, et ce site vous aide à calculer la monnaie rendue lors de vos transactions.</p>
+        </div>
+
+        <!-- عنوان الحساب -->
+        <h1>Calcul de la monnaie</h1>
+        
+        <!-- إدخال المبلغ -->
+        <div class="input-section">
+            <label for="montant">Entrez le montant :</label>
+            <input type="number" id="montant" min="0" placeholder="0">
+            <button id="ajouter">Ajouter</button>
+        </div>
+        
+        <!-- عرض المبلغ المستحق -->
+        <div class="output-section">
+            <p><strong>Somme due : </strong><span id="somme_due">0</span> euros</p>
+        </div>
+        
+        <!-- إدخال المبلغ المدفوع -->
+        <div class="input-section">
+            <label for="verse">Montant versé :</label>
+            <input type="number" id="verse" min="0" placeholder="0">
+            <button id="calculer">Calculer</button>
+        </div>
+        
+        <!-- عرض نتائج الحساب -->
+        <div class="output-section" id="rendu">
+            <p><strong>Rendu de la monnaie :</strong></p>
+            <p>Billets de 10 E : <span id="billets10">0</span></p>
+            <p>Billets de 5 E : <span id="billets5">0</span></p>
+            <p>Pièces de 1 E : <span id="pieces1">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
